@@ -1,0 +1,39 @@
+<html>
+    <head>
+            <title>html rocks!!</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+    </head>
+    <body>
+        <table border="3">
+            <tr style="background: burlywood">
+                <th>ID: <input type="number" id="id"/></th>
+                <th>NAME: <input type="text" id="name"/></th>
+                <th>Ph.: <input type="text" id="phone"/></th>
+            </tr>
+            <tbody id="body1">
+                <tr>
+                    <td>1</td>
+                    <td>Danny</td>
+                    <td>059-2737491</td>
+                </tr>
+                <tr>
+                        <td>2</td>
+                        <td>Viky</td>
+                        <td>059-2354483</td>
+                </tr>
+                <tr>
+                        <td>3</td>
+                        <td>Ron</td>
+                        <td>059-3493828</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="addrow()">add</button>
+        <script>
+            function addrow()
+            {
+                $('#body1').append(`<tr><td>${$('#id').val()}</td><td>${$('#name').val()}</td><td>${$('#phone').val()}</td></tr>`)
+            }
+        </script>
+    </body>
+</html

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>html rocks!!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script> 
+    </head>
+    <body>
+        <p> Name: <input type="text" id="getName"/> </p>
+        <p> age: <input type="number" id="getAge"/> </p>
+        <p> birthDay: <input type="date" id="getDate"/> </p>
+        <button onclick="print()">print</button>
+    </body>
+    <script>
+        {
+            function print()
+            {
+                alert(`name: ${$('#getName').val()} \n age: ${$('#getAge').val()} \n birthday: ${$('#getDate').val()}`)
+            }
+        }
+    </script>
+</html>
